@@ -22,4 +22,10 @@ public class StringCalculatorTests {
         Assert.assertEquals(18, result);
     }
 
+    @Test
+    public void test2() {
+        String numbers = "1,2";
+        int result = stringCalculator.calculate(numbers);
+        Assert.assertEquals(3, result);
+    }
 }
