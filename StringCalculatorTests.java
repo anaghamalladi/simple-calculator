@@ -15,4 +15,11 @@ public class StringCalculatorTests {
         stringCalculator.calculate(null);
     }
 
+    @Test
+    public void test1() {
+        String numbers =  "1,2,3,12";
+        int result = stringCalculator.calculate(numbers);
+        Assert.assertEquals(18, result);
+    }
+
 }
